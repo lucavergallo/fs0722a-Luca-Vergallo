@@ -1,0 +1,69 @@
+.header {
+    background-color: white;
+    display: block;
+    font-style:'Roboto', sans-serif;
+    text-align: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+}
+
+#logo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.barra-gialla {
+    background-color:bisque;
+    color: #107777;
+    align-content: space-around;
+    border-top: 1px solid yellow;
+    padding: 5px;
+}
+
+#testo-bold-barra-gialla {
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+.articolo {
+    background-color:white;
+    font-style:'Roboto', sans-serif;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    align-items: center;
+
+}
+
+#video-descrizione {
+color:grey
+}
+
+#ricetta {
+    background-color:white;
+    font-style:'Roboto', sans-serif;
+    text-align: left;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    align-items: left;
+
+}
+
+
+.footer {
+    background-color:white;
+    font-style:'Roboto', sans-serif;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    align-items: left;
+}
+
