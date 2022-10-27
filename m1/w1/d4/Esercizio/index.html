@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I passi fondamentali per creare facilmente un template per post.">
+    <link rel="stylesheet" href="/Esercizio/assets/css/font-awesome.css">
+    <link rel="stylesheet" href="/Esercizio/assets/css/reset.css">
+    <link rel="stylesheet" href="/Esercizio/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/61973c9951.js" crossorigin="anonymous"></script>
+    <title>Come Creare Un Template per i post - Epicode School</title>
+</head>
+
+<body>
+    <!--INIZIO HEADER-->
+    <header id="header">
+        <img src="assets/img/logo.svg" alt="logo Epicode" max-width="500">
+
+        <p id="titolo-sotto-logo">epicode - il blog dei developer</p>
+        
+        <a href="*">menu</a>
+        <a href="*">articoli</a>
+        <a href="*">lavora con noi</a>
+
+    </header>
+    <!--FINE HEADER-->
+
+    <!--INIZIO MAIN-->
+
+    <main class="main">
+        <article>
+            <h1>Come creare un template per i post</h1>
+
+            <p>di Mario Rossi - pubblicato il 25-10-2020</p>
+
+            <p>La prima cosa da fare è suddividere in blocchi la pagina, identificando le <b>parti comuni</b> da applicare a tutte le pagine</p>
+
+            <p>Le varie aree saranno quindi suddivise in:</p>
+
+            <ul>
+                <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
+                <li>Contenuti centrali variabili del tag <code>&lt;main&gt;</code></li>
+                <li>Contenuti di fine pagina comuni, da inserire nel tag <code>&lt;footer&gt;</code></li>
+            </ul>
+
+            <h2>Formattazione del codice</h2>
+
+            <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <b>selezionare con css</b>. Perciò i passi saranno:</p>
+
+            <ol>
+                <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
+                <li>CScrivere l'HTML dai tag esterni a quelli interni</li>
+                <li>Applicare gli stili CSS</li>
+            </ol>
+
+            <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressocchè totale</p>
+
+
+            <!--TABELLA-->
+
+            <table>
+                <caption id="caption">Diffusione dei CSS</caption>
+                <thead>
+                    <tr>
+                        <th>Anno</th>
+                        <th>Percentuale Utilizzo</th>
+                        <th>Supporto browsers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2000</th>
+                        <th>20%</th>
+                        <th>17%</th>
+                    </tr>
+                    <tr>
+                        <td>2002</th>
+                        <th>35%</th>
+                        <th>22%</th>
+                    </tr>
+                    <tr>
+                        <td>2004</th>
+                        <th>45&</th>
+                        <th>42%</th>
+                    </tr>
+                    <tr>
+                        <td>2008</th>
+                        <th>80%</th>
+                        <th>51%</th>
+                    </tr>
+                    <tr>
+                        <td>2012</th>
+                        <th>100%</th>
+                        <th>76%</th>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <p>Il test di validazione può essere fatto tramite il <a href="https://www.w3schools.com" target="_blank">tool online</a> dedicato allo scopo. Una volta ottimizzato il tutto avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:</p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dvOvHXruEDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </article>
+
+        <!--FORM-->
+        <section>
+
+            <p>Novità</p>
+            <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+
+            <form method="POST" action="#" autocomplete="on" onsubmit="alert('iscrizione eseguita')">
+                <fieldset>
+                    <input type="email" name="user_email" id="user_email" placeholder="Inserisci l'email">
+                    <button type="submit">Iscriviti!</button>
+                </fieldset>
+            </form>
+
+        </section>
+
+    
+    </main>
+
+    <!--INIZIO ASIDE-->
+    <aside>
+        <h3>Articoli Correlati</h3>
+
+        <section>
+
+            <a href="#">Validare il codice HTML</a>
+            <p>Categoria: develop</p>
+            <p>Data: 18-09-2020</p>
+            
+        </section>
+
+        <section>
+
+            <a href="#">Correggere la sintassi</a>
+            <p>Categoria: develop</p>
+            <p>Data: 16-09-2020</p>
+            
+        </section>
+
+        <section>
+
+            <a href="#">Meno kb nella pagina</a>
+            <p>Categoria: ottimizzazion</p>
+            <p>Data: 30-09-2020</p>
+            
+        </section>
+
+    </aside>
+
+    <!--INIZIO FOOTER-->
+    <footer id="footer">
+        <p>Blog Epicode &copy;2021</p>
+        <address>Testata online di Mario Rossi, registrata prot. n231/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233.</address> <a href="mailto:info@epicode.school" title="Contattaci per info">info@epicode.school</a>
+    </footer>
+    
+</body>
+
+</html>

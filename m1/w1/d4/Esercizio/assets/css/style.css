@@ -1,0 +1,87 @@
+/* IMPOSTAZIONI GENERALI */
+@font-face {
+    font-family: fa-brands;
+    src: url("/Esercizio/assets/webfonts/fa-brands-400.ttf") format("trutype");
+    src: url("/Esercizio/assets/webfonts/fa-brands-400.woff") format("woff");
+    src: url("/Esercizio/assets/webfonts/fa-brands-400.ttf") format("trutype");
+}
+
+@font-face {
+    font-family: fa-regular;
+    src: url("/Esercizio/assets/webfonts/fa-regular-400.ttf") format("trutype");
+    src: url("/Esercizio/assets/webfonts/fa-regular-400.woff") format("woff");
+    src: url("/Esercizio/assets/webfonts/fa-regular-400.woff2") format("trutype");
+}
+
+@font-face {
+    font-family: fa-solid;
+    src: url("/Esercizio/assets/webfonts/fa-solid-900.ttf") format("trutype");
+    src: url("/Esercizio/assets/webfonts/fa-solid-900.woff") format("woff");
+    src: url("/Esercizio/assets/webfonts/fa-solid-900.woff2") format("trutype");
+}
+
+body {
+        background-image: url("../img/sfondo.png");
+        background-color: #cccccc;
+        background-size: 40;
+        background-position:center;
+        background-attachment:fixed;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+/* HEADER */
+
+#header {
+    background-image: linear-gradient(rgb(0, 255, 162), rgb(13, 255, 0));
+    flex-direction: column;
+    outline: 5px black;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10%;
+}
+
+#titolo-sotto-logo {
+    outline: 5px black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10%;
+}
+
+/* MAIN */
+
+.main {
+    background-color: beige;
+    flex-direction: column;
+    outline: 5px black;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 20%;
+    align-content: center;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
+#footer {
+    background-image: linear-gradient(rgb(0, 255, 162), rgb(13, 255, 0));
+    flex-direction: column;
+    outline: 5px black;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10%;
