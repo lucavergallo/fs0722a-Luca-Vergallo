@@ -1,0 +1,40 @@
+/* IMPOSTAZIONI GENERALI */
+
+body {
+
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    background-color: rgb(45, 168, 216);
+    line-height: 1.65;
+}
+
+h1{
+
+    font-size: 3rem;
+    line-height: 1.5;
+    padding-top: 50px;
+    padding-left: 50px;
+
+}
+
+p {
+
+
+    font-size: 2rem;
+    line-height: 1.5;
+    padding-top: 50px;
+    padding-left: 50px;
+
+}
+
+img {
+
+width: 200px;
+padding-top: 50px;
+padding-left: 50px;
+
+}
+
+
+
