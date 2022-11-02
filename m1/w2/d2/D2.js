@@ -62,7 +62,6 @@ console.log(name);
 document.write(name);
 
 
-
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
@@ -86,6 +85,10 @@ document.write(name1 == name2);
 
 console.log(name1 != name2);
 document.write(name1 != name2);
+
+const NAME = 'Prova';
+NAME = 'Nuova Prova';
+
 
 
 
