@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Calcolatrice</title>
+</head>
+<body>
+
+<!--INIZIO CONTENITORE-->
+
+    <div class="contenitore">
+
+<!--INIZIO TESTO-->
+
+        <div Class="istruzioni">
+            <h1>La mia calcolatrice in JS</h1>
+        </div>
+        
+
+<!--FINE TESTO-->
+
+<!--INIZIO CALCOLATRICE-->
+
+        <div class="calcolatrice">
+
+            <input type="text" id="display" placeholder="0">
+            <button data-simbolo="7" onclick="aggiungiCifra(this)">7</button>
+            <button data-simbolo="8" onclick="aggiungiCifra(this)">8</button>
+            <button data-simbolo="9" onclick="aggiungiCifra(this)">9</button>
+            <button id="arancione" data-simbolo="/" onclick="aggiungiCifra(this)">/</button>
+            <button data-simbolo="4" onclick="aggiungiCifra(this)">4</button>
+            <button data-simbolo="5" onclick="aggiungiCifra(this)">5</button>
+            <button data-simbolo="6" onclick="aggiungiCifra(this)">6</button>
+            <button id="arancione" data-simbolo="*" onclick="aggiungiCifra(this)">x</button>
+            <button data-simbolo="2" onclick="aggiungiCifra(this)">1</button>
+            <button data-simbolo="2" onclick="aggiungiCifra(this)">2</button>
+            <button data-simbolo="3" onclick="aggiungiCifra(this)">3</button>
+            <button id="arancione" data-simbolo="-" onclick="aggiungiCifra(this)">-</button>
+            <button id="grigio" onclick="del(this)">AC</button>
+            <button data-simbolo="0" onclick="aggiungiCifra(this)">0</button>
+            <button data-simbolo="." onclick="aggiungiCifra(this)">.</button>
+            <button id="arancione" data-simbolo="+" onclick="aggiungiCifra(this)">+</button>
+            <button id="uguale" onclick="tot()">=</button>
+
+        </div>
+
+<!--FINE CALCOLATRICE-->
+
+    </div>
+
+<!--INIZIO SCRIPT-->
+
+    <script src="/calcolatrice.js"></script>
+
+<!--FINE SCRIPT-->
+
+<!--FINE CONTENITORE-->
+    
+</body>
+</html>
