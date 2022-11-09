@@ -1,0 +1,111 @@
+body  {
+  
+  margin: 80px;
+  background-color: #b0b9c5;
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1  {
+margin-bottom: 20px;
+font-size: 30px;
+}
+  
+/* HEADER */
+.header {
+    background-color: #286bca;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+  
+  
+/* INPUT*/
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 10px;
+    width: 65%;
+    padding: 10px;
+    float: center;
+    font-size: 16px;
+}
+  
+/* TASTO AGGIUNGI */
+  .addBtn {
+    width: 35%;
+    padding: 10px;
+    background: #d9d9d9;
+    color: #555;
+    float: center;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+ }
+  
+.addBtn:hover {
+    background-color: #bbb;
+ }
+  
+/* UNORDERED LIST GENERALE */
+ul {
+  text-align: left;
+  margin: auto;
+  width: 73%;
+  padding: 0;   /* Rimuoviamo padding dalla lista */
+  list-style-type: none; /*così togliamo i bullet point dalla lista*/
+}
+
+
+/* LIST ITEMS */
+
+  ul li {
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    border-radius: 10px;
+    color: black;
+  
+    /* impostazioni per rendere i list items non selezionabili */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  
+  /* PSEUDO CLASSE LIST ITEM CON HOVER */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* STILE LIST ITEM DOPO CLICK */
+  ul li.cliccato {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+
+  
+  /* TASTO CANCELLA */
+  .cancella {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+
+  /* TASTO CANCELLA CON PSEUD CLASSE*/
+  .cancella:hover {
+    background-color: #364cf4;
+    color: white;
+  }
+  
