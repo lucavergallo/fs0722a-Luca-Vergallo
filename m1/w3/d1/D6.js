@@ -81,8 +81,8 @@ function check3and7(n) {
 */
 
 function reverseString(str) {
-    let strReversed=[]; //serve a contenere i caratteri di str in ordine inverso
-    let rev = ""; //conterrà la stringa invertita
+    let strReversed=[]; 
+    let rev = "";
     for (let i = 0; i < str.length; i++) { 
         strReversed[i] = str[str.length - 1 - i];
         rev += strReversed[i];    

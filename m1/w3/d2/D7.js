@@ -23,7 +23,7 @@ function stringhe(str1, str2) {
     Scrivi una funzione per creare un array di soli valori multipli di 5, da 1 a 100.
    */
   
-  const skipFive = function () {
+  const multipli = function () {
     let array = [];
     for (let i = 1; i < 100; i++) {
       if (i % 5 === 0) {
@@ -33,13 +33,7 @@ function stringhe(str1, str2) {
     console.log(array);
   };
   
-  /*arr = []; //resetto arr
-  for (let i = 1; i < 100; i++) {
-    if (i % 5 == 0) {
-      arr.push(i);
-    }
-  }
-  console.log(arr);*/
+
   /* ESERCIZIO 4
     Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
    */
@@ -52,14 +46,13 @@ function stringhe(str1, str2) {
     Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici.
    */
   
-  //scrivo una funzione che ritorna un array con i valori pari dell'argomento
   
   arr = [];
   for (let i = 0; i < 100; i++) {
     arr[i] = i;
   }
   
-  function ritornaArrayConIPari(arr) {
+  function ritornaArrayPari(arr) {
     return arr.filter((e) => {
       return e % 2 == 0;
     });
@@ -92,7 +85,7 @@ function stringhe(str1, str2) {
     es.: ["EPICODE", "is", "great"] => [7, 2, 5]
   */
   
-  let animali = ["Adinolfi", "Berlu", "Salvini"];
+  let animali = ["EPICODE", "is", "great"];
   function strToNumArray(array) {
     let s = [];
     for (let u of array) {
@@ -105,7 +98,7 @@ function stringhe(str1, str2) {
   Scrivi una funzione per eliminare solo i valori PARI da un array.
 */
 
-const deleteEvenFromArray = function (arr) {
+const eliminaPari = function (arr) {
     return arr.filter((e) => {
       return (e + 1) % 2 == 0;
     });
@@ -115,14 +108,12 @@ const deleteEvenFromArray = function (arr) {
     Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 10 (incluso), SENZA AMMETTERE DUPLICATI.
    */
   
-  //riceve un array non vuoto di numeri
-  //e ritorna true se le entrate sono tutte diverse, false altrimenti
-  function verificaTuttiDiversi(arr) {
-    //caso array non vuoto
+  function verificaDiversi(arr) {
+   
     if (arr.length > 0) {
       for (let u of arr) {
         if (arr.indexOf(u) < arr.lastIndexOf(u)) {
-          //se ci sono due copie di u in arr
+          
           return false;
         }
       }
@@ -131,15 +122,15 @@ const deleteEvenFromArray = function (arr) {
     }
   
   
-  function tenRandomWithoutClones() {
+  function RandomWithoutClones() {
     arr = [];
     i = 0;
     while(i<10) {
-      rnd = Math.round(Math.random() * 10); //genero un numero casuale
-      let arr1 = arr.concat([rnd]); //arr1 è arr concatenato al nuovo rnd
+      rnd = Math.round(Math.random() * 10);
+      let arr1 = arr.concat([rnd]); 
       
-      if (verificaTuttiDiversi(arr1)) { //se rnd è diverso da tutti gli elementi precedenti
-        arr.push(rnd); //lo aggiungo ad arr
+      if (verificaDiversi(arr1)) { 
+        arr.push(rnd); 
         i = i + 1;
       }
     }
