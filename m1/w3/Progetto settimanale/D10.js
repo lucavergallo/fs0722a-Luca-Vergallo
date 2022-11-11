@@ -56,7 +56,7 @@ console.log(me)
   Crea del codice per aggiungere programmaticamente all'oggetto precedentemente creato un array chiamato "skills", contenente i linguaggi di programmazione che conosci.
 */
 
-me.skills =  ["Javascript","Java","PHP"];
+me.skills =  ["Javascript","Java","PHP"]; // aggiungo la proprietà skills e l'array all'oggetto con "me"
 
 console.log(me.skills)
 
@@ -64,7 +64,7 @@ console.log(me.skills)
   Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
 */
 
-me.skills.push('Fourth item')
+me.skills.push('Fourth item') //con il metodo push inserisco la stringa Fourth Item come nuovo elemento dell'array skills
 
 console.log(me.skills)
 
@@ -73,8 +73,8 @@ console.log(me.skills)
   Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
 */
 
-const removeLast = me.skills.pop();  //creo la costante e richiamo la proprietà skills che contiente l'array e con il metodo "pop" elimino ultimo elemento dell'array
-console.log(removeLast);
+const ultimoElemento = me.skills.pop();  //creo la costante e richiamo la proprietà skills che contiente l'array e con il metodo "pop" elimino ultimo elemento dell'array
+console.log(ultimoElemento);
 
 console.log( me.skills);
 
@@ -350,7 +350,7 @@ const firstUlDisappear = function () {
 /*const firstUlDisappear = function () {
   const myList = document.getElementById("myList");
   const item = document.getElementById(myList.value);
-  myList.removeChild(item);  
+  myList.removeChild(item);   rimuovo la lista con il metodo removeChild
 }
 
 firstUlDisappear();*/
@@ -539,18 +539,7 @@ const movies = [
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
 
-function newestMovie() {
-  let newestMovie = { Year: 0 };
-  for (let movie of movies) {
-    if (eval(movie.Year) >= eval(newestMovie.Year)) {
-      newestMovie = movie;
-    }
-  }
-  return newestMovie;
-}
 
-newestMovie();
-console.log(newestMovie());
 
 
 /* ESERCIZIO 13
@@ -558,7 +547,7 @@ console.log(newestMovie());
 */
 
 function countMovies() {
-  return movies.length;
+  return movies.length;  //con movies.length ottengo il numero di elementi e quindi il numero di film contenuti nell'array
 }
 
 countMovies();
@@ -570,11 +559,11 @@ console.log(countMovies());
 */
 
 function onlyTheYears() {
-  let arr = [];
-  for (let movie of movies) {
-    arr[arr.length] = movie.Year;
+  let arr = []; //inizializzo array vuoto
+  for (let movie of movies) {   //con ciclo for of riprendo ogni film contenuto nell'array
+    arr[arr.length] = movie.Year; //riprendo tutti gli elementi dell'array considerando la sola proprietà "Year"
   }
-  return arr;
+  return arr;  //dico alla funzione di farmi ritornare l'array contentente la sola proprietà "Year"
 }
 
 onlyTheYears();
@@ -585,10 +574,10 @@ console.log(onlyTheYears());
 */
 
 function onlyInLastMillennium() {
-  let arr = [];
-  for (let movie of movies) {
-    if (eval(movie.Year) < 2000) {
-      arr[arr.length] = movie;
+  let arr = [];            //inizializzo array vuoto
+  for (let movie of movies) {   //con ciclo for of ciclo ogni film contenuto nell'array
+    if (eval(movie.Year) < 2000) { //imposto condizione con funzione eval che mi permette di valutare ci sono film prodotti prima del 2000
+      arr[arr.length] = movie; //se ci sono film che rispettano condizione allora inserisci in array vuoto i film 
     }
   }
   return arr;
@@ -603,10 +592,10 @@ console.log(onlyInLastMillennium());
 
 function sumAllTheYears() {
   let sum = 0;
-  for (let movie of movies) {
+  for (let movie of movies) { //Inizializzo una variabile sum come 0 per memorizzare il risultato e uso ciclo for or per visitare ogni elemento e ggiungere il valore della proprietà Year degli elementi dell'array alla somma
     sum += movie.Year;
   }
-  return sum;
+  return sum; //dovo aver ciclato gli anni dico alla funzione di restituirmi il valore della somma
 }
 
 sumAllTheYears();
@@ -616,8 +605,8 @@ console.log(sumAllTheYears());
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
 
-function searchByTitle(str) {
-  return movies.filter((movie) => {
+function searchByTitle(str) {    //definisco funzione con parametro str
+  return movies.filter((movie) => {  //con metodo filter prendo ogni elemento dell'array e applico un'istruzione condizionale su di esso. Se la stringa inserita corrispende alla proprietà title di uno degli elementi, allora l'elemento viene inviato all'array di output. 
     return movie.Title.includes(str);
   });
 }
@@ -631,10 +620,10 @@ console.log(searchByTitle('Avengers: Age of Ultron'));
 */
 
 function searchAndDivide(str) {
-  let obj = {};
-  obj.match = searchByTitle(str);
+  let obj = {};                   //definita la variabile obj che ha come valore un oggetto vuoto
+  obj.match = searchByTitle(str); //definisco l'oggetto obj match che avrà come valore il risulato della funzione definita nell'esercizio 17 con array relativo al film inserito nel parmetro "str"
   obj.unmatch = movies.filter((movie) => {
-    return !movie.Title.includes(str);
+    return !movie.Title.includes(str); //definisco l'oggetto obj unmatch con array che include tutti i film diversi
   });
   return obj;
 }
@@ -648,7 +637,7 @@ console.log(searchAndDivide('Avengers: Age of Ultron'));
 */
 
 function removeIndex(n) {
-  movies.splice(n, 1);
+  movies.splice(n, 1); //con il metodo splice diciamo alla funzione di togliere 1 elemento dall'array movie posto nella posizione definita dal parametro n
   return movies;
 }
 
