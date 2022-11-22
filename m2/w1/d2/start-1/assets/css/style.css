@@ -16,23 +16,6 @@ hr {
   display: none;
 } /* rimuove l'elemento */
 
-/* HEADER */
-header {
-  background: rgb(0, 160, 198);
-  background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: white;
-  box-shadow: 0 3px 3px #444;
-  margin-bottom: 1.5em;
-  padding: 2em 1.5em;
-  
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
 i.fas.fa-pen-square, i.fas.fa-calendar-alt, i.fas.fa-caret-square-up {
   font-size: 50px;
   padding: 10px;
@@ -71,43 +54,62 @@ i.fas.fa-pen-square, i.fas.fa-calendar-alt, i.fas.fa-caret-square-up {
 
 @media screen and (min-width: 700px) {
 
-i.fas.fa-pen-square, i.fas.fa-calendar-alt, i.fas.fa-caret-square-up {
-  font-size: 50px;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.534);
-  border: 3px solid white;
-  border-radius: 10%;
-  box-shadow: 0 2px 2px #444;
-
-  }
-
-  i.fas.fa-pen-square {
-    color: blue;
-    position: fixed;
-    bottom: 1157px;
-    right: 0;
-    z-index: 9999;    
+  i.fas.fa-pen-square, i.fas.fa-calendar-alt, i.fas.fa-caret-square-up {
+    font-size: 50px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.534);
+    border: 3px solid white;
+    border-radius: 10%;
+    box-shadow: 0 2px 2px #444;
+  
+    }
+  
+    i.fas.fa-pen-square {
+      color: blue;
+      position: fixed;
+      bottom: 1157px;
+      right: 0;
+      z-index: 9999;    
+    
+      }
+  
+    i.fas.fa-calendar-alt {
+      color: blue;
+      position: fixed;
+      bottom: 1052px;
+      right: 0;
+      z-index: 9999;
+  
+      }
+  
+    i.fas.fa-caret-square-up {
+      color: red;
+      position: fixed;
+      bottom: 24px;
+      right: 0;
+    
+      }
   
     }
 
-  i.fas.fa-calendar-alt {
-    color: blue;
-    position: fixed;
-    bottom: 1052px;
-    right: 0;
-    z-index: 9999;
-
-    }
-
-  i.fas.fa-caret-square-up {
-    color: red;
-    position: fixed;
-    bottom: 24px;
-    right: 0;
+/* HEADER */
+header {
+  background: rgb(0, 160, 198);
+  background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 3px 3px #444;
+  margin-bottom: 1.5em;
+  padding: 2em 1.5em;
   
-    }
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 
-  }
+
 
 @media screen and (min-width: 800px) {
   header {
