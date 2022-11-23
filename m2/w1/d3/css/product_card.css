@@ -1,0 +1,81 @@
+html, body {height: 100%;}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card {
+
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(245, 245, 174);
+    color: brown;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+}
+
+.card img {
+    margin-inline: 0;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    max-width: 100%;
+}
+
+.description {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 20px 20px;
+
+}
+
+#descriptiontext {
+
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-inline: 20px;
+    padding: 0 57px 7px 26px;
+    align-items: center;
+
+}
+
+#descriptiontext2 {
+
+font-weight: 200;
+
+}
+
+#descriptionprice {
+
+font-weight: 200;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding: 24px 20px 20px 20px;
+}
+
+.card .description > button {
+
+
+    background: rgb(242, 176, 53);
+    border: 0; 
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: brown;
+}

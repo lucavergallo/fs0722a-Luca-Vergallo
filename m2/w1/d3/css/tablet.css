@@ -1,0 +1,179 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+nav {
+    display: flex; /*non c'è bisogno di scrivere row perchè eè di default*/
+    background: rgb(245, 245, 174);
+    color: white;
+    border-radius: 30px;
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+    font-weight: 700;
+    align-items: center;
+}
+
+nav div {
+    flex: 1;
+    background: rgb(242, 176, 53);
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+div {
+    justify-content: center;
+    align-items: center; 
+}
+
+#logo > img {
+width: 10%;
+}
+
+#logo {
+display: flex;
+flex-grow: 2;
+justify-content: space-around;
+}
+
+span{
+font-size: 30px
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.cards {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    }
+
+.card {
+
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    flex: 0 0 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(245, 245, 174);
+    color: brown;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+}
+
+.card img {
+    margin-inline: 0;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    max-width: 100%;
+}
+
+.description {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 20px 20px;
+
+}
+
+#descriptiontext {
+
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-inline: 20px;
+    padding: 0 57px 7px 26px;
+    align-items: center;
+
+}
+
+#descriptiontext2 {
+
+font-weight: 200;
+
+}
+
+#descriptionprice {
+
+font-weight: 200;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding: 24px 20px 20px 20px;
+}
+
+.card .description > button {
+
+
+    background: rgb(242, 176, 53);
+    border: 0; 
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: brown;
+}
+
+.article {
+
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(245, 245, 174);
+    color: brown;
+    border-radius:  30px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+div > img {
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#descriptiontext {
+
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-inline: 20px;
+    padding: 0 57px 7px 26px;
+    align-items: flex-start
+
+}
+
+#descriptiontext2 {
+
+font-weight: 200;
+
+}

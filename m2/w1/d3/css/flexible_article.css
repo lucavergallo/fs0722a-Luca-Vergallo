@@ -1,0 +1,51 @@
+html, body {height: 100%;}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.article {
+
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(245, 245, 174);
+    color: brown;
+    border-radius:  30px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+div > img {
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#descriptiontext {
+
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-inline: 20px;
+    padding: 0 57px 7px 26px;
+    align-items: flex-start
+
+}
+
+#descriptiontext2 {
+
+font-weight: 200;
+
+}
+
+

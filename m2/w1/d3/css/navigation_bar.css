@@ -1,0 +1,48 @@
+nav {
+    display: flex; /*non c'è bisogno di scrivere row perchè eè di default*/
+    background: rgb(245, 245, 174);
+    color: white;
+    border-radius: 30px;
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+    font-weight: 700;
+    align-items: center;
+}
+
+nav div {
+    flex: 1;
+    background: rgb(242, 176, 53);
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+div {
+    justify-content: center;
+    align-items: center; 
+}
+
+div > img {
+width: 10%;
+}
+
+#logo {
+display: flex;
+flex-grow: 2;
+justify-content: space-around;
+}
+
+span{
+font-size: 30px
+}
+
+@media screen and (max-width: 575px) {
+
+}
+
