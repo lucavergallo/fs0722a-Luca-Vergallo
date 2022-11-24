@@ -27,20 +27,16 @@
     color: rgb(156, 156, 251);
 }
 
-@-webkit-keyframes cambioparole {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-0% {transform: translate(0,0);}
-100% {transform: translate(400px,0)}
-        }
 
 #primo {
    
     position:absolute;
     left: 730px;
+    top: 280px;
+    opacity: 0;
     animation-name: cambioparole;
-    animation-duration: 1s;
-    animation-delay: 1s;
+    animation-duration: 6s;
+    animation-delay: 0s;
     animation-iteration-count: infinite;
 
 }
@@ -49,8 +45,10 @@
    
     position:absolute;
     left: 730px;
+    top: 280px;
+    opacity: 0;
     animation-name: cambioparole;
-    animation-duration: 1s;
+    animation-duration: 6s;
     animation-delay: 2s;
     animation-iteration-count: infinite;
 
@@ -60,16 +58,18 @@
    
     position:absolute;
     left: 730px;
+    top: 280px;
+    opacity: 0;
     animation-name: cambioparole;
-    animation-duration: 1s;
-    animation-delay: 3s;
+    animation-duration: 6s;
+    animation-delay: 4s;
     animation-iteration-count: infinite;
 
 }
 
 @-webkit-keyframes cambioparole {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-    0% {transform: translate(0,0);}
-    100% {transform: translate(400px,0)}
+    0% {opacity: 0}
+    33% {opacity: 1; top:290px;}
+    66% {opacity: 0; top:290px;}
+    100% {opacity: 0; top:290px;}
     }
