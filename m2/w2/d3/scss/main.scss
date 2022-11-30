@@ -9,15 +9,14 @@ body {
     background-color: #640ec5;
     header {
       width: 100%;
-      display: flex;
+      display: $flex;
       flex-direction: column;
     
   }
   }
   
   
-  
-  
+
   
   .container1 {
     margin-inline: 24px;
@@ -26,8 +25,8 @@ body {
     padding: 40px;
 
     .scrittemenu {
-      display: flex;
-      align-items: center;
+      display: $flex;
+      align-items: $center;
       justify-content: space-between;
       #sass {
         font: {
@@ -61,10 +60,10 @@ body {
   
   
   .container2 {
-  display: flex;
+  display: $flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items: $center;
+  justify-content: $center;
   padding: 100px;
   .scritte {
     width: 787px;
