@@ -1,35 +1,5 @@
 @import "variables";
-
-/*++++ extend ++++
-.box {
-    border: 1px solid #000;
-    background-color: green;
-    margin-bottom: 10px;
-    width: 200px
-}
-.mybox {
-    @extend .box;
-    font-size: 10px;
-}
-
-/*++++ keyword % ++++
-%box2 {
-    border: 1px solid #000;
-    background-color: blue;
-    width: 300px;
-    margin: 10px;
-    padding: 20px;
-}
-
-.myfirstbox {
-    @extend %box2;
-    font-size: 10px;
-}
-
-.mysecondbox {
-    @extend %box2;
-    font-size: 20px;
-}*/
+@import "media-queries";
 
 
 
@@ -48,11 +18,13 @@ nav {
     background-color: rgb(1, 1, 102);
     display: flex;
     flex-direction: row;
-    height: 10%;
+    justify-content: center;
+
 
     .menu_lista {
         list-style: $List_Item_Display;
-        font-size: 1.5em;
+        font-size: 1em;
+
     }
       .menu_lista li {
         display: inline-block;
@@ -74,7 +46,7 @@ nav {
 @mixin homebutton($bgColor){
 
     width: 10%;
-    padding: 10px 20px;
+    padding: 5px;
 
     background: $bgColor;
     
@@ -99,19 +71,30 @@ main {
     margin: auto;
     width: 100%;
     justify-content: center;
-    height: 70%;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 section {
     display: flex;
     flex-direction: column;
-    width: 60%;
-    margin-left: 114px;
+    width: 30%;
 }
 
+h1 {
+font-size: 1em;
+}
 
+h2 {
+    font-size: 1em;
+    }
+
+h3 {
+    font-size: 1em;
+    }
+        
+    
 
 
 form.form-example {
@@ -134,7 +117,7 @@ label {
 
 
 aside {
-    width: 10%;
+    width: 20%;
     list-style: none;
 }
 
@@ -143,10 +126,9 @@ aside {
 vertical-align: middle;
 padding: 10px;
 color: gray;
-font-size: 1.2em;
+font-size: 1em;
 list-style: $List_Item_Display;
 border-bottom: 1px solid gray;
-margin-right: 20px;
 
     &:hover {
         color: black;
@@ -156,6 +138,6 @@ margin-right: 20px;
 
 
 footer {
-height: 15%;
 background-color: cornflowerblue;
+height: 30px;
 }

@@ -1,0 +1,16 @@
+aside .aside_lista{
+    li{
+      @media screen and (min-width: 480px){
+
+      color: blue;
+      font-size: 1.5em;
+      list-style: $List_Item_Display;
+      border-bottom: 1px solid gray;
+      
+          &:hover {
+              color: black;
+              background-color: $bg_Color_Item;
+              }
+      }
+    }
+  }

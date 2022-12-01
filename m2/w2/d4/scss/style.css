@@ -1,33 +1,16 @@
-/*++++ extend ++++
-.box {
-    border: 1px solid #000;
-    background-color: green;
-    margin-bottom: 10px;
-    width: 200px
-}
-.mybox {
-    @extend .box;
-    font-size: 10px;
-}
-
-/*++++ keyword % ++++
-%box2 {
-    border: 1px solid #000;
-    background-color: blue;
-    width: 300px;
-    margin: 10px;
-    padding: 20px;
+@media screen and (min-width: 480px) {
+  aside .aside_lista li {
+    color: blue;
+    font-size: 1.5em;
+    list-style: none;
+    border-bottom: 1px solid gray;
+  }
+  aside .aside_lista li:hover {
+    color: black;
+    background-color: gray;
+  }
 }
 
-.myfirstbox {
-    @extend %box2;
-    font-size: 10px;
-}
-
-.mysecondbox {
-    @extend %box2;
-    font-size: 20px;
-}*/
 /*INZIO*/
 body {
   font-family: "Montserrat";
@@ -41,11 +24,11 @@ nav {
   background-color: rgb(1, 1, 102);
   display: flex;
   flex-direction: row;
-  height: 10%;
+  justify-content: center;
 }
 nav .menu_lista {
   list-style: none;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 nav .menu_lista li {
   display: inline-block;
@@ -59,7 +42,7 @@ nav .menu_lista a {
 
 button {
   width: 10%;
-  padding: 10px 20px;
+  padding: 5px;
   background: orange;
   color: white;
   border: 1px solid white;
@@ -76,16 +59,27 @@ main {
   margin: auto;
   width: 100%;
   justify-content: center;
-  height: 70%;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 section {
   display: flex;
   flex-direction: column;
-  width: 60%;
-  margin-left: 114px;
+  width: 30%;
+}
+
+h1 {
+  font-size: 1em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+h3 {
+  font-size: 1em;
 }
 
 form.form-example {
@@ -106,7 +100,7 @@ label {
 }
 
 aside {
-  width: 10%;
+  width: 20%;
   list-style: none;
 }
 
@@ -114,10 +108,9 @@ aside {
   vertical-align: middle;
   padding: 10px;
   color: gray;
-  font-size: 1.2em;
+  font-size: 1em;
   list-style: none;
   border-bottom: 1px solid gray;
-  margin-right: 20px;
 }
 .aside_lista li:hover {
   color: black;
@@ -125,6 +118,6 @@ aside {
 }
 
 footer {
-  height: 15%;
   background-color: cornflowerblue;
+  height: 30px;
 }/*# sourceMappingURL=style.css.map */
