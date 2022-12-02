@@ -1,0 +1,126 @@
+@import "variables";
+@import "mixin";
+@import "if";
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+/*--------------------INIZIO NAVBAR---------------------*/
+
+
+
+nav {
+background-color: $bg-nav-footer;
+color : set-text-color($bg-nav-footer);
+}
+
+
+.nav {
+align-items:center;
+
+     #nav-item-2 {
+        color:$text-red;
+     }
+     #nav-item-3 {
+        color:$text-red;
+     }
+}
+
+.nav-item {
+
+    .nav-link {
+        color:$text-white;
+    }
+
+    i {
+        color:$text-red;
+    }
+}
+
+
+
+
+/*--------------------INIZIO SEZIONE 1---------------------*/
+
+.sezione1 {
+    background-image: url("/img/pexels-aleksandar-pasaric-325185.jpg");
+    background-size: auto;
+    background-position: center;
+    height: 600px;
+
+    h1 {
+        font-size: $font-size3;
+        font-weight: 400;
+    }
+
+    h5 {
+        font-weight: bold;
+    }
+}
+
+#button {
+    @include sezione1button (#7020f1);
+}
+
+p {
+color: black;
+}
+
+/*--------------------INIZIO SEZIONE 2---------------------*/
+#sezione2 {
+    background-color: #f6f5f6;
+
+}
+
+
+.card-title {
+    font-size: $font-size2;
+    font-weight: 400;
+}
+
+
+/*--------------------INIZIO SEZIONE 3---------------------*/
+
+h3 {
+    font-size: $font-size3;
+    font-weight: 400;
+}
+
+.card-img {
+width: 50%;
+align-self: center;
+margin-bottom: 3px;
+}
+
+/*--------------------INIZIO SEZIONE 4---------------------*/
+
+
+#roundImage{
+    border-radius: 50%;
+    width: 5%;
+
+}
+
+#nome {
+font-size: $font-size2;
+font-weight: bold;
+}
+
+/*--------------------INIZIO FOOTER---------------------*/
+
+footer {
+    background-color: $bg-nav-footer;
+    color: $text-white;
+    h5 {
+        font-size: $font-size1;
+        font-weight: bold;
+    }
+    p {
+        color: $text-white; 
+    }
+   
+}
+
+

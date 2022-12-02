@@ -1,0 +1,11 @@
+
+@function set-color-txt($color) {
+    @if (lightness($color) > 50) {
+      @return darken($color, 100%);
+    } @else {
+      @return lighten($color, 100%);
+    }
+  }
+  
+  $bg-nav-footer: #7020f1;
+  

@@ -1,0 +1,18 @@
+@mixin sezione1button($bgColor){
+
+    width: 20%;
+    padding: 5px;
+
+    background: $bgColor;
+    
+    color: white;
+
+    
+    &:hover{
+        color: $bgColor;
+        background: white;
+        border: 2px solid $bgColor;  
+        box-shadow: 0 0 1px black;  
+          
+    }
+}
