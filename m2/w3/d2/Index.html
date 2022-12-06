@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primo Esercizion m2w3d3</title>
+</head>
+<body>
+
+    <script>
+            class Persona {
+            constructor (_nome='', _eta=''){
+                this.nome= _nome;
+                this.eta= _eta;
+            }
+        
+        /*comparaEta (x,y) {
+            if (this.eta > this.eta) {
+            return `${this.nome} è più vecchio di ${this.nome}`;
+        }
+        else if (this.eta < this.eta) {
+            return `${this.nome} è più giovane di ${this.nome}`;
+        }
+        }*/
+    }
+
+                    var persona1 = new Persona ("Mario", 30);
+                    var persona2 = new Persona ("Giuseppe", 20);
+                    var persona3 = new Persona ("Carlo", 54);
+
+                    console.log(persona1);
+                    console.log(persona2);
+                    console.log(persona3);
+
+        function comparaEta (x,y) {
+        if (x.eta > y.eta) {
+            return `${x.nome} è più vecchio di ${y.nome}`;
+            }
+        else if (x.eta < y.eta) {
+            return `${x.nome} è più giovane di ${y.nome}`;
+            }
+        }
+        
+    
+        console.log(comparaEta(persona1,persona2));
+        console.log(comparaEta(persona1,persona3));
+        console.log(comparaEta(persona2,persona1));
+        console.log(comparaEta(persona2,persona3));
+        console.log(comparaEta(persona3,persona1));
+        console.log(comparaEta(persona3,persona2));
+
+
+
+    </script>
+    
+</body>
+</html>
