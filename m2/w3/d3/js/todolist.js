@@ -27,7 +27,7 @@ function nuovotask() {
   for (i = 0; i < cancella.length; i++) {
     cancella[i].onclick = function() {
       this.parentNode.remove();
-      localStorage.removeItem(`myInput`)
+      localStorage.removeItem(`myInput`);
     }
   }
 }
