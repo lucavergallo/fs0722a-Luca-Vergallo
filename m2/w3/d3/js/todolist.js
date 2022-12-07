@@ -2,8 +2,10 @@
 
 function nuovotask() {
   var myInput = document.querySelector("#myInput").value;
+  let = i;
 
-  localStorage.setItem('myInput', myInput);
+  localStorage.setItem(`myInput'${i}`, myInput);
+  i++;
 
   var li = document.createElement("li");
   var t = document.createTextNode(myInput);
