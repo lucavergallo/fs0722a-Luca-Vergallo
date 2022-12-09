@@ -38,13 +38,13 @@ function inserisciHtml (item) {
 
 
 
-//METODO ALTERNATIVO con XML 
+//METODO ALTERNATIVO con XMLHttpRequest 
 
 /*let http = new XMLHttpRequest();
 http.open('get', 'users.json', true);
 http.send();
 http.onload = function(){
-   if(this.readyState == 4 && this.status == 200){
+   if(this.readyState == 4 && this.status == 200){  //Se readyState è al punto 4 e lo status di XMLHttpRequest è 200 (OK) alla la response è pronta
       let cards = JSON.parse(this.responseText);
       let output = "";
       for(let item of cards){
