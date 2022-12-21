@@ -54,7 +54,7 @@ class Lavoratore extends Reddito {
 
 }
 
-var Commerciante: any = new Lavoratore(78, 40000, 25, 5);
+var Commerciante = new Lavoratore(78, 40000, 25, 5);
 var Artigiano = new Lavoratore(67, 30000, 30, 3);
 var Ristoratore = new Lavoratore(40, 60000, 22, 4);
 
