@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(26, 26, 26);
+}
+
+#cards {
+    cursor: pointer;
+    :hover {
+        box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.43);
+    }
+    #capo {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #prezzo_scontato {
+        font-size: 30px;
+    }
+    #prezzo_originale {
+        text-decoration-line: line-through;
+
+    }
+    #sconto {
+        font-weight: 700;
+
+    }
+    button {
+
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+}
+    
