@@ -1,0 +1,34 @@
+<div
+  class="absolute z-10 w-[600px] h-full bg-blue-400 text-white left-1/2 -translate-x-1/2 py-10 px-8"
+>
+  <h1 class="font-bold text-2xl tracking-widest">TO DO List</h1>
+  <div class="mt-4 mb-8">
+    <app-new-todo (onNewTodo)="newTodo($event)"></app-new-todo>
+  </div>
+
+  <ng-container *ngIf="todos | async as todoList">
+    <div
+      class="overflow-auto max-h-[80%] rounded shadow-lg bg-white"
+      *ngIf="todoList.length; else emptyTemplate"
+    >
+      <div
+        class="border-b border-slate-300"
+        *ngFor="let todo of todoList; let index = index"
+      >
+        <app-todo-item
+          [todo]="todo"
+          (onDeleteItem)="deleteItem(todo.id)"
+          (onCompleted)="completedItem(todo.id, $event)"
+        ></app-todo-item>
+      </div>
+    </div>
+  </ng-container>
+</div>
+
+<ng-template #emptyTemplate>
+  <div
+    class="rounded shadow-lg bg-white text-slate-600 p-4 font-bold text-center"
+  >
+    Vuoto!
+  </div>
+</ng-template>
