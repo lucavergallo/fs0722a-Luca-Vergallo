@@ -1,40 +1,38 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Route, RouterModule } from '@angular/router';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './component/home/home.component';
-import { PostAttiviComponent } from './component/post-attivi/post-attivi.component';
-import { PostInattiviComponent } from './component/post-inattivi/post-inattivi.component';
+import { NavbarComponent } from './navbar.component';
+import { HomePage } from './pages/home.page';
+import { ActivePostsPage } from './pages/active-posts.page';
+import { InactivePostsPage } from './pages/inactive-posts.page';
 
-
-const routes: Routes[]= [
-  {path: "home",
-  component: HomeComponent
-},
-{path: "Post Attivi",
-  component: PostAttiviComponent
-},
-{path: "Post Inattivi",
-  component: PostInattiviComponent
-},
-{path: "**",
-  component: HomeComponent
-}
+const routes:Route[] = [
+  {
+    path:"",
+    component:HomePage
+  },
+  {
+    path:"active-posts",
+    component:ActivePostsPage
+  },
+  {
+    path:"inactive-posts",
+    component:InactivePostsPage
+  }
 ]
-
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     NavbarComponent,
-    PostAttiviComponent,
-    PostInattiviComponent
+    HomePage,
+    ActivePostsPage,
+    InactivePostsPage,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
